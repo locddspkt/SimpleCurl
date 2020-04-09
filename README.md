@@ -59,7 +59,7 @@ $curlOptions = array(
     ANY_PHP_CURL_OPTION => 'Value'
 );
 
-SimpleCurl::Post(
+$response = SimpleCurl::Post(
     'https://postman-echo.com/post',
     $params,
     $cookieFilePath,
