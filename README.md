@@ -27,7 +27,15 @@ $response = SimpleCurl\SimpleCurl::Get('http://example.com')
 ## POST Method
 
 ```
-$response = SimpleCurl\SimpleCurl::Post('http://example.com',array('param1' => 'Data of param 1','param_2' => 'Data 2'));
+$params = array(
+    'string' => 'text param can be passed', 
+    'int' => 100,
+    'float' => 100.59,
+    'date' => '2020-04-09',
+    'time' => '2020-04-19T12:00:00'
+);
+
+$response = SimpleCurl\SimpleCurl::Post('http://example.com', $params);
 ```
 
 ## License
