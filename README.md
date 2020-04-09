@@ -18,13 +18,14 @@ Include the class
 include_once '/path/to/the/file/src/SimpleCurl.php';
 ```
 
-## GET Method
+## Examples
+### GET Method
 
 ```
 $response = SimpleCurl\SimpleCurl::Get('http://example.com')
 ```
 
-## POST Method
+### POST Method
 
 ```
 $params = array(
